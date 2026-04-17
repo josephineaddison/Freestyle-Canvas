@@ -143,6 +143,14 @@ context.closePath(); //finishes the line
 context.fill(); //fills the hat with pink
 context.stroke(); //draws the outside
 
+context.strokeStyle = "green"; // color of the poofball
+context.lineWidth = 7; // thickness of the poofball
+context.fillStyle = "lightblue"; // color of the inside of the poofball
+context.beginPath();
+context.ellipse(150, 100, 80, 40, 22/12*Math.PI, 0, 2*Math.PI);
+context.fill();
+context.stroke();
+
     </script>
 		
 	</p>
