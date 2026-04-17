@@ -113,6 +113,12 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.stroke();
 */
 
+context.strokeStyle = "#ffdc99"; // line and color for body
+  context.lineWidth = 200; // thickkk
+  context.beginPath(); //beginning the path
+  context.moveTo(170,280);
+  context.lineTo(170,360);
+  context.stroke(); //complete the path
 
 context.strokeStyle = "black"; // color of the outline
 context.lineWidth = 7; // thickness of the outline
@@ -150,13 +156,6 @@ context.beginPath();
 context.ellipse(170, 50, 8, 4, 22/12*Math.PI, 0, 2*Math.PI);
 context.fill();
 context.stroke();
-
-context.strokeStyle = "#ffdc99"; // line and color for body
-  context.lineWidth = 200; // thickkk
-  context.beginPath(); //beginning the path
-  context.moveTo(170,280);
-  context.lineTo(170,360);
-  context.stroke(); //complete the path
 
     </script>
 		
