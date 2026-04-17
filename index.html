@@ -67,7 +67,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 context.clearRect(0, 0, canvas.width, canvas.height);
 
-
+/*
   // --- parameters ---
   const cx = canvas.width / 2;
   const cy = canvas.height / 2;
@@ -93,6 +93,47 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.moveTo(cx, cy - scale / 4.2);
   context.lineTo(cx, cy + scale / 1);
   context.stroke();
+
+  context.strokeStyle = "#00ef0f"; // neon green
+  context.lineWidth = 2; // super skinny
+  context.beginPath(); //beginning the path
+  context.moveTo(120,139.3);
+  context.lineTo(120,285);
+  context.lineTo(240,285);
+  context.lineTo(240,139.3);
+  context.stroke();
+
+  context.strokeStyle = "#65gg0f"; // neon green
+  context.lineWidth = 15; // super thick
+  context.beginPath(); //making the T
+  context.moveTo(cx - scale / 1.2, cy - scale / 4.2);
+  context.lineTo(cx + scale / 1.2, cy - scale / 4.2);
+  context.moveTo(cx, cy - scale / 4.2);
+  context.lineTo(cx, cy + scale / 1);
+  context.stroke();
+*/
+
+
+context.strokeStyle = "black"; // color of the outline
+context.lineWidth = 7; // thickness of the outline
+context.fillStyle = "yellow"; // color of the interior
+context.beginPath(); //begins face
+context.ellipse(170, 200, 100, 100, 22/12*Math.PI, 0, 2*Math.PI); //coordinates and size of face
+context.fill(); //fill in face
+context.stroke(); //make face
+
+context.fillStyle = "black"; //color for eyes
+context.fillRect(120,150,10,20); //eye one
+context.fillRect(170,150,10,20); //eye two
+
+context.strokeStyle = "black" //color for mouth
+context.lineWidth = 7 //width of mouth
+context.beginPath(); //begin mouth
+context.arc(160,220,50,24/12*Math.PI,12/12*Math.PI); //angles and start point for mouth
+
+
+context.stroke();
+
     </script>
 		
 	</p>
